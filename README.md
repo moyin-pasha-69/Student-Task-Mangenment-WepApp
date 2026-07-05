@@ -31,15 +31,22 @@ A responsive Task Management web application built using **HTML**, **Tailwind CS
 ## 📂 Project Structure
 
 ```
-Student-Task-Mangenment-WepApp/
+Student-Task-Dashboard/
 │
-├── index.html
-├── src/
-│   ├── input.css
-│   └── output.css
-├── scripts/
-│   └── inputBoxScript.js
-└── README.md
+├── 📁 assets/
+│   └── 📁 images/           
+│
+├── 📁 scripts/
+│   └── 📄 inputBoxScript.js  
+│
+├── 📁 src/
+│   ├── 📄 input.css        
+│   └── 📄 output.css         
+│
+├── 📄 index.html            
+├── 📄 package.json           
+├── 📄 package-lock.json      
+└── 📄 README.md            
 ```
 
 ---
@@ -63,7 +70,7 @@ Student-Task-Mangenment-WepApp/
 
 ## ⚡ How to use
 
-Live link: 
+Live link: https://moyin-pasha-69.github.io/Student-Task-Mangenment-WepApp/
 
 
 ## 🎯 What I Learned
@@ -98,6 +105,7 @@ If you find any bugs or have ideas to improve this project, feel free to open an
 A fellow Developer 
 
 - GitHub: https://github.com/moyin-pasha-69/
+- LinkedIn :  https://www.linkedin.com/in/moyin-pasha-7a68aa330/
 
 ---
 
