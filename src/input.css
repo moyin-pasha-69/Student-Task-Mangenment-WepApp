@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer components {
+  .selected {
+    @apply outline-2 outline-offset-2 outline-gray-500;
+  }
+
+  .showMessage {
+    @apply block text-red-500;
+  }
+
+  .addRow {
+    @apply w-full border-b border-b-yellow-400/80 px-2;
+  }
+
+  .tooltip {
+    @apply sm:w-64 truncate text-wrap mx-auto cursor-pointer;
+  }
+
+  .completeTaskStyle {
+    @apply line-through text-gray-500;
+  }
+
+  .redBall {
+    @apply w-4 h-4 bg-red-500 rounded-full;
+  }
+  .greenBall {
+    @apply w-4 h-4 bg-green-500 rounded-full;
+  }
+  .yellowBall {
+    @apply w-4 h-4 bg-yellow-500 rounded-full;
+  }
+
+  .redBall-c {
+    @apply w-4 h-4 bg-red-500/50 rounded-full;
+  }
+  .greenBall-c {
+    @apply w-4 h-4 bg-green-500/50 rounded-full;
+  }
+  .yellowBall-c {
+    @apply w-4 h-4 bg-yellow-500/50 rounded-full;
+  }
+
+  .doneTask {
+    @apply bg-blue-400 rounded-sm m-2 p-[2px] sm:p-0 active:bg-blue-400/60 font-bold text-white cursor-pointer;
+  }
+  .deleteTask {
+    @apply bg-orange-600 rounded-sm m-2 p-[2px] sm:p-0  active:bg-orange-600/60 font-bold text-white cursor-pointer;
+  }
+}

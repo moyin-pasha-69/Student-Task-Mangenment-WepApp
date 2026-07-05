@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task | Manger</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-[#F0F4FF] overflow-x-hidden">
+    <header class="header bg-[#003C65] w-screen py-4 mb-8">
+      <div class="max-w-[1440px] mx-auto flex justify-center">
+        <h1
+          class="bg-white rounded-xl py-2 px-4 shadow-[0px_0px_15px_black] sm:text-2xl cursor-pointer"
+        >
+          Student Task Dashboard
+        </h1>
+      </div>
+    </header>
+
+    <main
+      class="main w-full mx-auto max-w-[1440px] flex px-2 sm:px-0 flex-col justify-center text-center"
+    >
+      <p class="priorityMessage text-red-500"></p>
+      <section
+        class="task-box bg-white mx-auto shadow-[0px_2px_10px_gray] rounded-xl p-4 w-full max-w-sm md:max-w-md mb-8"
+      >
+        <div class="add-task-box flex flex-col gap-4">
+          <input
+            type="text"
+            placeholder="Add task here..."
+            id="inputTask"
+            class="outline-none border-gray-300 border rounded-xl p-2 shadow-[0px_2px_8px_gray]"
+          />
+          <div
+            class="priority-section flex gap-4 border-gray-300 border rounded-xl p-2 shadow-[0px_2px_8px_gray]"
+          >
+            <p class="text-gray-400 text-base">Priority :</p>
+            <div class="priority-boxes flex justify-center items-center gap-4">
+              <div
+                class="red-high bg-red-500 cursor-pointer rounded-full w-5 h-5"
+                id="red-h"
+              ></div>
+              <div
+                class="orange-medium bg-yellow-500 cursor-pointer rounded-full w-5 h-5"
+                id="orange-m"
+              ></div>
+              <div
+                class="green-low bg-green-500 cursor-pointer rounded-full w-5 h-5"
+                id="green-l"
+              ></div>
+            </div>
+          </div>
+          <button
+            id="addTaskButton"
+            class="bg-blue-900 rounded-md py-2 cursor-pointer text-white active:bg-[#003B67]"
+          >
+            Add Task
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="bg-white shadow-[0px_2px_10px_gray] rounded-xl py-2 w-full mx-auto max-w-sm sm:max-w-md mb-8 flex flex-col sm:flex-row px-1 gap-4 justify-evenly text-white"
+      >
+        <p class="bg-blue-500 p-2 rounded-xl">
+          Total Tasks : <span id="totalTasks" class="font-bold"></span>
+        </p>
+        <p class="bg-blue-500 p-2 rounded-xl">
+          Completed Tasks :
+          <span id="completedTasks" n class="font-bold"></span>
+        </p>
+        <p class="bg-blue-500 p-2 rounded-xl">
+          Pending Tasks : <span id="pendingTasks" class="font-bold"></span>
+        </p>
+      </section>
+
+      <section class="flex flex-col justify-center items-center">
+        <h2 class="text-[#003B72] font-bold text-2xl mb-2">
+          Recent Submission
+        </h2>
+
+        <div
+          class="content bg-white shadow-[0px_2px_10px_gray] rounded-sm p-4 mb-4 w-full mx-auto overflow-x-auto max-w-sm sm:max-w-2xl"
+        >
+          <div class="head flex justify-around sm:justify-between mb-2 sm:mb-4">
+            <div class="colors flex gap-4 w-full justify-around">
+              <div class="red-high flex justify-center items-center gap-1">
+                <p class="bg-red-500 cursor-pointer rounded-full w-5 h-5"></p>
+                <p>High</p>
+              </div>
+
+              <div class="orange-medium flex justify-center items-center gap-1">
+                <p
+                  class="bg-yellow-500 cursor-pointer rounded-full w-5 h-5"
+                ></p>
+                <p>Medium</p>
+              </div>
+
+              <div class="green-low flex justify-center items-center gap-1">
+                <p class="bg-green-500 cursor-pointer rounded-full w-5 h-5"></p>
+                <p>Low</p>
+              </div>
+            </div>
+
+            <div
+              class="searchBar border bg-[#EFF4FF] border-gray-500 rounded-xl p-1 shadow-[0px_2px_10px_gray] hidden sm:block"
+            >
+              <input
+                type="text"
+                placeholder="search here..."
+                class="outline-none border-none p-1"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-amber-400/80 w-full h-[2px] rounded-2xl mb-2 hidden sm:block"
+          ></div>
+
+          <table class="w-full border border-gray-600 rounded-xs">
+            <thead class="w-full border-b border-b-yellow-500">
+              <tr class="w-full text-sky-400/60 py-2">
+                <th>Sl no.</th>
+                <th>Task</th>
+                <th>Priority</th>
+                <th class="hidden sm:inline-block">Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody
+              id="taskContent"
+              class="w-full py-1 text-center cursor-pointer"
+            ></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/inputBoxScript.js"></script>
+  </body>
+</html>
