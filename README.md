@@ -44,10 +44,6 @@ Student-Task-Mangenment-WepApp/
 
 ---
 
-## 📸 Preview
-
-<img width="1337" height="601" alt="image" src="https://github.com/user-attachments/assets/7eca6315-8cc5-4b8c-93b2-b72e749cf974" />
-
 
 ### Desktop View
 
