@@ -51,17 +51,17 @@ Student-Task-Mangenment-WepApp/
 
 ### Desktop View
 
-```
+
 <img width="1337" height="601" alt="image" src="https://github.com/user-attachments/assets/594f8438-c21b-4e66-ae9e-b09ddc58daf6" />
 
-```
+
 
 ### Mobile View
 
-```
+
 <img width="474" height="470" alt="image" src="https://github.com/user-attachments/assets/fe559ce6-861e-49b7-adac-5bef108f1267" />
 
-```
+
 
 ---
 
